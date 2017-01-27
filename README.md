@@ -21,7 +21,7 @@ $ gulp gt -n "hello-world"
 
 
 
-To rename specific extenstion:
+To rename specific extension:
 --------
 ```sh
 $ gulp gt -n <template-name> -e <ext>
