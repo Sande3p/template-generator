@@ -13,12 +13,26 @@ $ npm i
 
 How to use:
 ----------
-```
+```sh
 $ gulp gt -n <template-name>
+
+$ gulp gt -n "hello-world"
 ```
 
-Example
+
+
+To rename specific extenstion:
 --------
+```sh
+$ gulp gt -n <template-name> -e <ext>
+
+$ gulp gt -n "hello-world" -e .html
 ```
-$ gulp gt -n "hello-world"
+
+To rename all files:
+--------
+```sh
+$ gulp gt -n <template-name> -e *
+
+$ gulp gt -n "hello-world" -e *
 ```

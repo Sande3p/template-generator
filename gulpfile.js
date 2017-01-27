@@ -1,5 +1,6 @@
 //Gulp Sass plugins
 var gulp = require("gulp"),
+  gutil = require('gulp-util'),
   browserSync = require('browser-sync').create(),
   rename = require('gulp-rename')
 argv = require('yargs').argv;
@@ -11,7 +12,9 @@ gulp.task('generate-template', function() {
   //rename files  
   gulp.src(['./app/' + argv.base + '/**/*'])
     .pipe(rename(function(path) {
-      if (path.extname === '.html') {
+      if (argv.e === path.extname) {
+        path.basename = argv.n;
+      } else if (argv.e === '*') {
         path.basename = argv.n;
       }
     }))
@@ -30,4 +33,4 @@ gulp.task('serve', function() {
 
 // gist
 gulp.task("default", ["serve"]);
-gulp.task('gt',["generate-template"])
+gulp.task('gt', ["generate-template"])
