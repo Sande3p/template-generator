@@ -1,0 +1,28 @@
+{
+  "name": "template-generator",
+  "version": "0.0.0",
+  "description": "template generator for development resources",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sande3p/template-generator.git"
+  },
+  "keywords": [
+    "template",
+    "generator"
+  ],
+  "author": "Sandeep Yadav <https://SandeepYadav.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sande3p/template-generator/issues"
+  },
+  "homepage": "https://github.com/sande3p/template-generator#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "yargs": "^6.6.0"
+  }
+}
