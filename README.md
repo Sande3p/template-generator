@@ -1,5 +1,5 @@
 # template-generator
-generates template form developments resources
+generates template for development resources
 
 Prerequisites:
 ----------
